@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="MonopolyGoGame"
-run/main_scene="res://tablero_test_01.fbm/MainBoard.tscn"
+run/main_scene="res://Content/Assets/tablero_test_01.fbm/MainBoard.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 
 [rendering]

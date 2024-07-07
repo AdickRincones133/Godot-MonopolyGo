@@ -1,0 +1,411 @@
+[gd_scene load_steps=7 format=3 uid="uid://bbvbr4cll8pe0"]
+
+[ext_resource type="PackedScene" uid="uid://dxtxbr41jh60" path="res://Content/Assets/tablero_test_01.fbm/tablero_test_01.fbx" id="1_r0x60"]
+[ext_resource type="Script" path="res://Content/Assets/tablero_test_01.fbm/tablero_test_01.gd" id="2_wnmh5"]
+[ext_resource type="PackedScene" uid="uid://bgc2d43nsepsx" path="res://Content/Assets/Tablero/tablero.fbx" id="3_cn4oy"]
+
+[sub_resource type="Sky" id="Sky_y6ep1"]
+
+[sub_resource type="Environment" id="Environment_b1vg0"]
+background_mode = 1
+background_color = Color(0.497731, 0.793591, 0.978956, 1)
+sky = SubResource("Sky_y6ep1")
+ambient_light_source = 3
+ssr_enabled = true
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_tm2am"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(8.05431, 0, 0, 0, 8.05431, 0, 0, 0, 8.05431, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.0864195, -0.0843672, 0.0287898, 0.00144639, 0.0414193, 0.117036, -0.0891324, -0.0811272, 0.0298127, 0.08, 0.213, 0.08)
+metadata/_edit_lock_ = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.0890082, -0.00088984, 0.0865549, -0.0766652, 0.0568291, 0.0794224, -0.040187, -0.110384, 0.0401913, 0.142292, 0.618041, 0.16162)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_b1vg0")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(0.57915, 0, 0, 0, 0.57915, 0, 0, 0, 0.57915, 0.113316, 0.0124636, 0.109838)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(0.0138238, 0, 0, 0, 0.0138238, 0, 0, 0, 0.0138238, 0.00128272, 0, 0.000241011)
+mesh = SubResource("CapsuleMesh_tm2am")
+
+[node name="Root Scene" parent="." instance=ExtResource("1_r0x60")]
+script = ExtResource("2_wnmh5")
+
+[node name="Section1BigTile01" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81243, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, 0.112622, 0.000732098, 0.112497)
+
+[node name="Section1DefaultTile01" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37663, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.0901352, 0.000732098, 0.112497)
+
+[node name="Section1DefaultTile02" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37663, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.0751431, 0.000732098, 0.112497)
+
+[node name="Section1DefaultTile03" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37663, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.0597854, 0.000732098, 0.112497)
+
+[node name="Section1DefaultTile04" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37663, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.0447933, 0.000732098, 0.112497)
+
+[node name="Section1DefaultTile05" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37663, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.030167, 0.000732098, 0.112497)
+
+[node name="Section1DefaultTile06" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37663, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.0153578, 0.000732098, 0.112497)
+
+[node name="Section1DefaultTile07" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37663, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.00018474, 0.000732098, 0.112496)
+
+[node name="Section1DefaultTile08" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37663, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0149883, 0.000732098, 0.112496)
+
+[node name="Section1DefaultTile09" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37663, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0299126, 0.000732098, 0.112496)
+
+[node name="Section1DefaultTile10" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0443394, 0.000732098, 0.112496)
+
+[node name="Section1DefaultTile11" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0600099, 0.000732098, 0.112496)
+
+[node name="Section1DefaultTile12" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0749341, 0.000732098, 0.112496)
+
+[node name="Section1DefaultTile13" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0901072, 0.000732098, 0.112496)
+
+[node name="Section1BigTile03" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81243, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, -0.112972, 0.000732098, 0.112497)
+
+[node name="Section1DefaultTile110" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, 0.0898792)
+
+[node name="Section1DefaultTile109" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, 0.0749894)
+
+[node name="Section1DefaultTile108" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, 0.060438)
+
+[node name="Section1DefaultTile107" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, 0.0448714)
+
+[node name="Section1DefaultTile106" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, 0.0306583)
+
+[node name="Section1DefaultTile105" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, 0.0147533)
+
+[node name="Section1DefaultTile104" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, -0.000136589)
+
+[node name="Section1DefaultTile103" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, -0.014688)
+
+[node name="Section1DefaultTile102" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, -0.0295779)
+
+[node name="Section1DefaultTile101" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, -0.0451445)
+
+[node name="Section1DefaultTile100" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, -0.0600344)
+
+[node name="Section1DefaultTile99" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, -0.0745858)
+
+[node name="Section1DefaultTile98" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.112283, 0.000732098, -0.0898141)
+
+[node name="Section1BigTile04" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81243, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, -0.112972, 0.000732098, -0.112637)
+
+[node name="Section1DefaultTile30" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0899936, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile31" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0749069, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile32" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0595301, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile33" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0450237, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile34" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0296469, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile35" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0145603, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile36" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.000236275, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile37" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.0147427, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile38" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.0304096, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile39" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, 0.0446259, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile40" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, 0.0600027, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile41" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, 0.0750893, 0.000732098, -0.112386)
+
+[node name="Section1DefaultTile42" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, 0.090176, 0.000732098, -0.112386)
+
+[node name="Section1BigTile02" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81243, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, 0.112622, 0.000732098, -0.113098)
+
+[node name="Section1DefaultTile69" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, -0.0898141)
+
+[node name="Section1DefaultTile68" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, -0.0745858)
+
+[node name="Section1DefaultTile67" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, -0.0600344)
+
+[node name="Section1DefaultTile66" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, -0.0451446)
+
+[node name="Section1DefaultTile65" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, -0.0292395)
+
+[node name="Section1DefaultTile64" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, -0.0150265)
+
+[node name="Section1DefaultTile63" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, 0.000201767)
+
+[node name="Section1DefaultTile62" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, 0.0149162)
+
+[node name="Section1DefaultTile61" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, 0.0300572)
+
+[node name="Section1DefaultTile60" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, 0.0451981)
+
+[node name="Section1DefaultTile59" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, 0.0599126)
+
+[node name="Section1DefaultTile58" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, 0.074627)
+
+[node name="Section1DefaultTile57" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.95484, 0, 0, 0, 0.254959, 0, 0, 0, 1.47853, 0.112419, 0.000732098, 0.0901945)
+
+[node name="Section2BigTile05" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81243, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, 0.0814855, 0.000732098, 0.0807292)
+
+[node name="Section2DefaultTile23" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.0586792, 0.000732098, 0.0810248)
+
+[node name="Section2DefaultTile22" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.0440037, 0.000732098, 0.0810248)
+
+[node name="Section2DefaultTile21" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.0295769, 0.000732098, 0.0810248)
+
+[node name="Section2DefaultTile20" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, 0.0146526, 0.000732098, 0.0810248)
+
+[node name="Section2DefaultTile19" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.000520388, 0.000732098, 0.0810248)
+
+[node name="Section2DefaultTile18" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0156934, 0.000732098, 0.0810248)
+
+[node name="Section2DefaultTile17" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0146985, 0.000732098, 0.0810248)
+
+[node name="Section2DefaultTile16" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0288765, 0.000732098, 0.0810248)
+
+[node name="Section2DefaultTile15" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0440495, 0.000732098, 0.0810248)
+
+[node name="Section2DefaultTile14" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90622, -0.0589739, 0.000732098, 0.0810248)
+
+[node name="Section2BigTile06" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81243, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, -0.0807002, 0.000732098, 0.0818872)
+
+[node name="Section2DefaultTile89" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.080811, 0.000732098, 0.0584075)
+
+[node name="Section2DefaultTile90" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.080811, 0.000732098, 0.0438561)
+
+[node name="Section2DefaultTile91" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.080811, 0.000732098, 0.0293047)
+
+[node name="Section2DefaultTile92" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.080811, 0.000732098, 0.0147532)
+
+[node name="Section2DefaultTile93" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.080811, 0.000732098, -0.000136631)
+
+[node name="Section2DefaultTile94" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.080811, 0.000732098, -0.0150265)
+
+[node name="Section2DefaultTile95" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.080811, 0.000732098, -0.0299163)
+
+[node name="Section2DefaultTile96" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.080811, 0.000732098, -0.043791)
+
+[node name="Section2DefaultTile97" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.080811, 0.000732098, -0.0590192)
+
+[node name="Section2BigTile07" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81243, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, -0.0823113, 0.000732098, -0.0813628)
+
+[node name="Section2DefaultTile51" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, -0.0592401, 0.000732098, -0.0807621)
+
+[node name="Section2DefaultTile50" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, -0.0435731, 0.000732098, -0.0807621)
+
+[node name="Section2DefaultTile49" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, -0.0299371, 0.000732098, -0.0807621)
+
+[node name="Section2DefaultTile48" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, -0.0142702, 0.000732098, -0.0807621)
+
+[node name="Section2DefaultTile47" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, 0.000236195, 0.000732098, -0.0807621)
+
+[node name="Section2DefaultTile46" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, 0.0153229, 0.000732098, -0.0807622)
+
+[node name="Section2DefaultTile45" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, 0.0298292, 0.000732098, -0.0807622)
+
+[node name="Section2DefaultTile44" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, 0.0443357, 0.000732098, -0.0807622)
+
+[node name="Section2DefaultTile43" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.90621, 0.058552, 0.000732098, -0.0807622)
+
+[node name="Section2BigTile08" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81242, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, 0.0812596, 0.000732098, -0.0812567)
+
+[node name="Section2DefaultTile70" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0806085, 0.000732098, -0.0590192)
+
+[node name="Section2DefaultTile71" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0806085, 0.000732098, -0.0431141)
+
+[node name="Section2DefaultTile72" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0806085, 0.000732098, -0.0295779)
+
+[node name="Section2DefaultTile73" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0806085, 0.000732098, -0.0140112)
+
+[node name="Section2DefaultTile74" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0806085, 0.000732098, -0.0011518)
+
+[node name="Section2DefaultTile75" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0806085, 0.000732098, 0.0147533)
+
+[node name="Section2DefaultTile76" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0806084, 0.000732098, 0.0293047)
+
+[node name="Section2DefaultTile77" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0806084, 0.000732098, 0.0441945)
+
+[node name="Section2DefaultTile78" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0806084, 0.000732098, 0.058746)
+
+[node name="Section3BigTile10" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81242, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, 0.0496823, 0.000732098, 0.0497892)
+
+[node name="Section3DefaultTile29" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.7766, 0.0288307, 0.000732098, 0.0496838)
+
+[node name="Section3DefaultTile28" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.7766, 0.0141552, 0.000732098, 0.0496838)
+
+[node name="Section3DefaultTile27" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.7766, 0.0144039, 0.000732098, 0.0496838)
+
+[node name="Section3DefaultTile26" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.7766, -2.2893e-05, 0.000732098, 0.0496838)
+
+[node name="Section3DefaultTile25" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.7766, -0.014201, 0.000732098, 0.0496838)
+
+[node name="Section3DefaultTile24" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.7766, -0.028379, 0.000732098, 0.0496838)
+
+[node name="Section3BigTile11" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81242, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, -0.050181, 0.000732098, 0.0497892)
+
+[node name="Section3DefaultTile88" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.0500161, 0.000732098, 0.0276127)
+
+[node name="Section3DefaultTile87" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.0500161, 0.000732098, 0.0150917)
+
+[node name="Section3DefaultTile86" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.0500162, 0.000732098, 0.000540211)
+
+[node name="Section3DefaultTile85" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.0500162, 0.000732098, -0.0140112)
+
+[node name="Section3DefaultTile84" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, -0.0500162, 0.000732098, -0.0289011)
+
+[node name="Section3BigTile12" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81242, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, -0.050181, 0.000732098, -0.0504688)
+
+[node name="Section3DefaultTile52" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.80555, -0.0287766, 0.000732098, -0.0497184)
+
+[node name="Section3DefaultTile53" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.80555, -0.0142702, 0.000732098, -0.0497184)
+
+[node name="Section3DefaultTile54" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.80555, 0.000236235, 0.000732098, -0.0497184)
+
+[node name="Section3DefaultTile55" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.80555, 0.0141624, 0.000732098, -0.0497184)
+
+[node name="Section3DefaultTile56" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(1.37662, 0, 0, 0, 0.254959, 0, 0, 0, 2.80555, 0.0288918, 0.000732068, -0.0501605)
+
+[node name="Section3BigTile09" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.81242, 0, 0, 0, 0.254959, 0, 0, 0, 2.69868, 0.0492876, 0.000732098, -0.0492846)
+
+[node name="Section3DefaultTile83" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0504903, 0.000732098, -0.0282243)
+
+[node name="Section3DefaultTile82" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0504903, 0.000732098, -0.0143496)
+
+[node name="Section3DefaultTile81" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0504903, 0.000732098, 0.000201811)
+
+[node name="Section3DefaultTile80" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0504903, 0.000732098, 0.0133996)
+
+[node name="Section3DefaultTile79" type="CollisionShape3D" parent="Root Scene"]
+transform = Transform3D(2.8114, 0, 0, 0, 0.242582, 0, 0, 0, 1.40676, 0.0504903, 0.000732098, 0.0289663)
+
+[node name="Root Scene2" parent="." instance=ExtResource("3_cn4oy")]
+transform = Transform3D(1.06, 0, 0, 0, 1.06, 0, 0, 0, 1.06, 0, -0.001809, 0)
