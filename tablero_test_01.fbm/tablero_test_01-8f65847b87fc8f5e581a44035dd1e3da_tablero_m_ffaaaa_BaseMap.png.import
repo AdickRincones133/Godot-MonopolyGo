@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cj8d5li3toq68"
+path.s3tc="res://.godot/imported/tablero_test_01-8f65847b87fc8f5e581a44035dd1e3da_tablero_m_ffaaaa_BaseMap.png-5b5e185272d2e7159f6e9044db859a6f.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "49e4df3bb2c1880aea6d4ffcaef113f0"
+}
+
+[deps]
+
+source_file="res://tablero_test_01.fbm/tablero_test_01-8f65847b87fc8f5e581a44035dd1e3da_tablero_m_ffaaaa_BaseMap.png"
+dest_files=["res://.godot/imported/tablero_test_01-8f65847b87fc8f5e581a44035dd1e3da_tablero_m_ffaaaa_BaseMap.png-5b5e185272d2e7159f6e9044db859a6f.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
